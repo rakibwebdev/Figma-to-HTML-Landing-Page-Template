@@ -15,11 +15,210 @@
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
+    <!-- Header Section start -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="site-logo">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="./assets/img/logo-bookmark.svg" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- The overlay -->
+                    <div id="myNav" class="overlay">
 
+                        <!-- Button to close the overlay navigation -->
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                        <!-- Overlay content -->
+                        <div class="overlay-content">
+                            <a href="#">About</a>
+                            <a href="#">Services</a>
+                            <a href="#">Clients</a>
+                            <a href="#">Contact</a>
+                        </div>
+
+                    </div>
+
+                    <!-- Use any element to open/show the overlay navigation menu -->
+                    <span onclick="openNav()">open</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+    <!-- Main Sections start -->
+    <main>
+        <!-- Hero section start -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>A Simple Bookmark Manager</h1>
+                        <p>
+                            A clean and simple interface to organize your favourite websites. Open a new browser tab and
+                            see your sites load instantly. Try it for free.
+                        </p>
+                        <a href="#" class="btn btn-primary">
+                            Get it on Chrome
+                        </a>
+                        <a href="#" class="btn btn-primary">
+                            Get it on Firefox
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero section end -->
+
+        <!-- Feature section start -->
+        <section class="feature-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="section-title">Features</h2>
+                        <p>Our aim is to make it quick and easy for you to access your favourite websites. Your
+                            bookmarks sync between your devices so you can access them on the go. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Feature section end -->
+
+        <!-- Exetions Download section start -->
+        <section class="extenstion-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="section-title">Download the extension </h2>
+                        <p>We've got more browsers in the pipeline. Please do let us know if you've got a favourite
+                            you'd like us to prioritize.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./assets/img/logo-chrome.svg" class="card-img-top" alt="Chrome">
+                            <div class="card-body">
+                                <h5 class="card-title">Add to Chrome</h5>
+                                <p class="card-text">Minimum version 62</p>
+                                <a href="#" class="btn btn-primary">Add & Install Extension</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./assets/img/logo-firefox.svg" class="card-img-top" alt="Firefox">
+                            <div class="card-body">
+                                <h5 class="card-title">Add to Firefox</h5>
+                                <p class="card-text">Minimum version 55</p>
+                                <a href="#" class="btn btn-primary">Add & Install Extension</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./assets/img/logo-opera.svg" class="card-img-top" alt="Opera">
+                            <div class="card-body">
+                                <h5 class="card-title">Add to Opera</h5>
+                                <p class="card-text">Minimum version 46</p>
+                                <a href="#" class="btn btn-primary">Add & Install Extension</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Exetions Download section end -->
+
+        <!-- Frequently Asked section start -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="section-title">Frequently Asked Questions</h2>
+                        <p>Here are some of our FAOs. If you have any other questions you'd like answered please feel
+                            free to email us.
+                        </p>
+                        <div class="faq-wrapper">
+                            <div class="faq-item">
+                                <a data-bs-toggle="collapse" href="#faq1" role="button" aria-expanded="false"
+                                    aria-controls="faq1">
+                                    What is Bookmark?<span></span>
+                                </a>
+                                <div class="collapse" id="faq1">
+                                    <div class="card card-body">
+                                        <h5 class="card-title">How can I request a new browser?<span></span></h5>
+                                        <p class="card-text">
+                                            Vivamus luctus eros aliquet convallis ultricies. Mauris augue mass&
+                                            ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet
+                                            convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse
+                                            imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue
+                                            massa, ultricies non ligula. Suspendisse imperdiet.
+                                            Is there a mobile app?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <a data-bs-toggle="collapse" href="#faq2" role="button" aria-expanded="false"
+                                    aria-controls="faq2">
+                                    Is there a mobile app?<span></span>
+                                </a>
+                                <div class="collapse" id="faq2">
+                                    <div class="card card-body">
+                                        <h5 class="card-title">How can I request a new browser?<span></span></h5>
+                                        <p class="card-text">
+                                            Vivamus luctus eros aliquet convallis ultricies. Mauris augue mass&
+                                            ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet
+                                            convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse
+                                            imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue
+                                            massa, ultricies non ligula. Suspendisse imperdiet.
+                                            Is there a mobile app?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <a data-bs-toggle="collapse" href="#faq3" role="button" aria-expanded="false"
+                                    aria-controls="faq3">
+                                    What about other Chromium browsers?<span></span>
+                                </a>
+                                <div class="collapse" id="faq3">
+                                    <div class="card card-body">
+                                        <h5 class="card-title">How can I request a new browser?<span></span></h5>
+                                        <p class="card-text">
+                                            Vivamus luctus eros aliquet convallis ultricies. Mauris augue mass&
+                                            ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet
+                                            convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse
+                                            imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue
+                                            massa, ultricies non ligula. Suspendisse imperdiet.
+                                            Is there a mobile app?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary">More Info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Frequently Asked section end -->
+    </main>
+    <!-- Main sections end -->
 
     <!--Bootstrap Bundle with Popper -->
     <script src="./vendors/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 
 </body>
 
