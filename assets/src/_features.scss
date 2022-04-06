@@ -1,6 +1,8 @@
 .feature-section {
+    padding-bottom: 90px;
+
     .features-tabs {
-        width: 730px;
+        max-width: 730px;
         display: block;
         margin: 0 auto;
         margin-bottom: 72px;
@@ -63,7 +65,7 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 620px;
+        max-width: 620px;
         height: 350px;
         border-bottom-right-radius: 234px;
         background-color: $soft-blue;

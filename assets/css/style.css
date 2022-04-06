@@ -72,7 +72,8 @@ html {
   scroll-behavior: smooth;
 }
 
-.btn-primary {
+.btn-primary,
+.btn-secondary {
   color: white;
   border-radius: 6px;
   border: 2px solid #5368df;
@@ -83,7 +84,8 @@ html {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-secondary:hover {
   color: #5368df;
   border-color: #5368df;
   background-color: transparent;
@@ -91,14 +93,8 @@ html {
 
 .btn-secondary {
   color: #252b46;
-  border-radius: 6px;
   border: 2px solid #252b46;
   background-color: transparent;
-  padding: 17px 23px;
-  font-weight: 500;
-  font-size: 14px;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
 }
 .btn-secondary:hover {
   color: #5368df;
@@ -261,10 +257,11 @@ header .main-nav-container .main-navigation .nav-menus-wrapper .nav-menu .menu-i
 }
 
 .feature-section {
+  padding-bottom: 90px;
   position: relative;
 }
 .feature-section .features-tabs {
-  width: 730px;
+  max-width: 730px;
   display: block;
   margin: 0 auto;
   margin-bottom: 72px;
@@ -317,7 +314,7 @@ header .main-nav-container .main-navigation .nav-menus-wrapper .nav-menu .menu-i
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 620px;
+  max-width: 620px;
   height: 350px;
   border-bottom-right-radius: 234px;
   background-color: #5368df;
@@ -446,6 +443,8 @@ header .main-nav-container .main-navigation .nav-menus-wrapper .nav-menu .menu-i
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 10px;
 }
 .newsletter .subscribe-form .form-group {
@@ -571,7 +570,37 @@ footer .social-wrapper .social {
   margin-top: unset;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
+  .mobile-primary-btn,
+.mobile-secondary-btn {
+    color: white;
+    border-radius: 6px;
+    border: 2px solid #5368df;
+    background-color: #5368df;
+    padding: 17px 16px;
+    font-weight: 500;
+    font-size: 14px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  .mobile-primary-btn:hover,
+.mobile-secondary-btn:hover {
+    color: #5368df;
+    border-color: #5368df;
+    background-color: transparent;
+  }
+
+  .mobile-secondary-btn {
+    color: #252b46;
+    border: 2px solid #F7F7F7;
+    background-color: #F7F7F7;
+  }
+  .mobile-secondary-btn:hover {
+    color: #5368df;
+    border-color: #5368df;
+    background-color: transparent;
+  }
+
   header {
     padding-top: 40px;
     padding-bottom: 78px;
@@ -659,5 +688,94 @@ header .closebtn {
     left: 0;
     right: 0;
     bottom: 50px;
+  }
+
+  .hero-section h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .hero-section p {
+    text-align: center;
+  }
+
+  .feature-section .features-tabs .nav-tabs {
+    border: unset;
+  }
+  .feature-section .features-tabs .nav-tabs .nav-link {
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid #F0EFF4;
+  }
+  .feature-section .features-tabs .nav-tabs .nav-link:hover {
+    border-top: 2px solid #F0EFF4;
+  }
+  .feature-section .features-tabs .nav-tabs:last-child {
+    border-bottom: 2px solid #F0EFF4;
+  }
+  .feature-section .features-tabs .nav-tabs .active::before {
+    max-width: 145px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .feature-section .tab-content .padding-left {
+    padding-left: 15px;
+  }
+  .feature-section .tab-content .section-title,
+.feature-section .tab-content p {
+    text-align: center;
+  }
+  .feature-section .tab-content .btn-primary {
+    display: none;
+  }
+
+  .extenstion-section {
+    padding-bottom: 140px;
+    padding-top: 30px;
+  }
+
+  .faq-section {
+    padding-bottom: 120px;
+  }
+
+  .newsletter .subscribe-form .form-group {
+    margin-right: 0px;
+    margin-bottom: 45px;
+  }
+  .newsletter .subscribe-form .subs-btn {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  footer .social-wrapper,
+footer .footer-navigation,
+footer .footer-logo {
+    float: unset;
+  }
+  footer .footer-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0px;
+    margin-bottom: 40px;
+  }
+  footer .footer-navigation .footer-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer-navigation .footer-menu .menu-item:not(last-child) {
+    margin-right: 0px !important;
+    margin-bottom: 15px;
+  }
+  footer .social-wrapper {
+    margin-top: 20px;
   }
 }
