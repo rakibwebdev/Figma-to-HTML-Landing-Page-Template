@@ -1,0 +1,48 @@
+footer {
+    padding: 30px 0px;
+    background-color: $very-dark-blue;
+
+    .footer-logo {
+        float: left;
+        margin-right: 64px;
+    }
+
+    .footer-navigation {
+        float: left;
+
+        .footer-menu {
+            display: flex;
+            flex-wrap: wrap;
+
+            .menu-item {
+                a {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $white;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    transition: $transition;
+
+                    &:hover {
+                        color: $soft-red;
+                    }
+
+
+                }
+
+                &:not(:last-child) {
+                    margin-right: 45px;
+                }
+            }
+        }
+    }
+
+    .social-wrapper {
+
+        float: right;
+
+        .social {
+            margin-top: unset;
+        }
+    }
+}

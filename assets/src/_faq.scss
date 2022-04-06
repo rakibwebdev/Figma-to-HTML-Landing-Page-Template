@@ -1,0 +1,57 @@
+.faq-section {
+    padding-bottom: 153px;
+
+    .container {
+        max-width: 540px;
+
+        .faq-wrapper {
+            .faq-item {
+
+                .faq-title,
+                .card-title {
+                    font-weight: 400;
+                    color: $very-dark-blue;
+                    border-top: 1px solid #DFDFDF;
+                    display: block;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 28px 0px;
+                    padding-right: 28px;
+                    transition: $transition;
+
+                    span {
+                        color: $soft-blue;
+                    }
+
+                    &:hover {
+                        color: $soft-red;
+                    }
+                }
+
+
+
+                .card-title {
+                    span {
+                        color: $soft-red;
+                    }
+
+                    &:hover {
+                        color: unset;
+                    }
+                }
+
+                .card-text {
+                    padding-top: 6px;
+                    padding-bottom: 34px;
+                }
+            }
+
+            .btn-primary {
+                display: block;
+                margin: 0 auto;
+                max-width: 114px;
+                margin-top: 54px;
+            }
+        }
+    }
+}

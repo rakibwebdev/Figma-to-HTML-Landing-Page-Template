@@ -1,0 +1,31 @@
+.hero-section {
+    padding-bottom: 70px;
+    margin-bottom: 90px;
+
+    h1 {
+        font-size: 58px;
+        font-weight: 500;
+        color: $very-dark-blue;
+        margin-bottom: 20px;
+        margin-top: 72px;
+    }
+
+    .btn-secondary {
+        margin-top: 16px;
+        margin-right: 17px;
+    }
+
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 620px;
+        height: 350px;
+        border-bottom-left-radius: 234px;
+        background-color: $soft-blue;
+        z-index: -1;
+    }
+}
