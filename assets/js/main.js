@@ -28,13 +28,14 @@
                 e.preventDefault();
                 var emailField = $('.subscribe-form input[type="email"]');
                 var email = emailField.val();
-
                 if (email != '') {
                     if (!isEmail(email)) {
                         emailField.after("<span class='error-msg'>Whoops, make sure it's an email</span>");
                         emailField.addClass('error');
+                        $('.subscribe-form .form-group').addClass('show-icon');
                         setTimeout(function () {
                             $('.error-msg').remove();
+                            $('.subscribe-form .form-group').removeClass('show-icon');
                         }, 2000);
                     } else {
                         emailField.after("<span class='success-msg'>Thanks for submitting..</span>");
@@ -50,5 +51,6 @@
             );
         }
         subscriptionForm();
+
     });
 })(jQuery);

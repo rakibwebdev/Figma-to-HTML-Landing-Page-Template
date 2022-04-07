@@ -29,7 +29,6 @@
             margin-right: 14px;
             position: relative;
 
-
             .form-control {
                 padding: 16px;
                 color: $very-dark-blue;
@@ -48,17 +47,7 @@
 
 
 
-                &::before {
-                    // content: 'f06a';
-                    // font-family: 'Font Awesome 6 Free';
-                    content: '';
-                    position: absolute;
-                    background-color: red;
-                    width: 10px;
-                    height: 10px;
-                    right: 0;
-                    z-index: 999;
-                }
+
             }
 
             .error {
@@ -67,6 +56,18 @@
 
             .success {
                 border: 2px solid $very-dark-blue;
+            }
+        }
+
+        .show-icon {
+            &::before {
+                content: '\f06a';
+                font-family: 'FontAwesome';
+                position: absolute;
+                right: 10px;
+                top: 15px;
+                z-index: 99;
+                color: $soft-red;
             }
         }
 
